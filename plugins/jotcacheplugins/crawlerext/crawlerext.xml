@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- version $Id: crawlerext.xml,v 1.1 2013/10/10 04:51:41 Jot Exp $ -->
+<extension version="2.5" type="plugin" group="jotcacheplugins" method="upgrade">
+  <name>Crawler Extended</name>
+  <author>Vladimir Kanich</author>
+  <creationDate>October 2014</creationDate>
+  <copyright>(C) 2010-2014 Vladimir Kanich. All rights reserved.</copyright>
+  <license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+  <authorEmail>contact_on_web_site@jotcomponents.net</authorEmail>
+  <authorUrl>http://www.jotcomponents.net</authorUrl>
+  <version>4.2.3</version>
+  <description>PLG_CRAWLEREXT_XML_DESCRIPTION</description>
+  <files>
+    <filename plugin="crawlerext">crawlerext.php</filename>
+    <filename plugin="crawlerext">crawlerext_form.php</filename>
+    <filename plugin="crawlerext">crawlerext_status.php</filename>
+    <filename>index.html</filename>
+  </files>
+</extension>

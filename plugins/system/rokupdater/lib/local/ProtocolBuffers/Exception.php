@@ -1,0 +1,11 @@
+<?php
+ /**
+  * @version   $Id: Exception.php 10995 2013-05-30 22:43:58Z btowles $
+  * @author    RocketTheme http://www.rockettheme.com
+  * @copyright Copyright (C) 2007 - 2013 RocketTheme, LLC
+  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+  */
+ 
+class ProtocolBuffers_Exception extends Exception{
+
+}

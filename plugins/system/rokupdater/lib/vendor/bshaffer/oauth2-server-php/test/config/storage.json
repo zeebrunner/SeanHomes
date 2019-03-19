@@ -1,0 +1,73 @@
+{
+    "authorization_codes": {
+        "testcode": {
+            "client_id": "Test Client ID",
+            "user_id": "",
+            "redirect_uri": "",
+            "expires": "9999999999",
+            "scope": ""
+        }
+    },
+    "client_credentials" : {
+        "Test Client ID": {
+            "secret": "TestSecret"
+        },
+        "Test Client ID with Redirect Uri": {
+            "secret": "TestSecret2",
+            "redirect_uri": "http://brentertainment.com"
+        }
+    },
+    "user_credentials" : {
+        "test-username": "testpass"
+    },
+    "refresh_tokens" : {
+        "test-refreshtoken": {
+            "refresh_token": "test-refreshtoken",
+            "client_id": "Test Client ID",
+            "user_id": "test-username",
+            "expires": 99999999900,
+            "scope": null
+        }
+    },
+    "access_tokens" : {
+        "accesstoken-expired": {
+            "access_token": "accesstoken-expired",
+            "client_id": "Test Client ID",
+            "expires": 1234567,
+            "scope": null
+        },
+        "accesstoken-scope": {
+            "access_token": "accesstoken-scope",
+            "client_id": "Test Client ID",
+            "expires": 99999999900,
+            "scope": "testscope"
+        },
+        "accesstoken-malformed": {
+            "access_token": "accesstoken-mallformed",
+            "expires": 99999999900,
+            "scope": "testscope"
+        }
+    },
+    
+    "jwt": {
+	    "Test Client ID": {
+	        "key": "-----BEGIN PUBLIC KEY-----\\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAstgzbq1Tyozg6Wn/ugyw\\nng4J2wPOaSJwPWlFFff92K60rQrrCDDUSVeuhC0+Tjn7Lq35gMZrsWazl3oj4KAH BBFZqBPejER0Z/t1wgZka97uooW2BclxUMjL6sFW92BLm2f2Po/SDjKdGRwt0+kd\\nj2MgmdqIDu7KTNLPVS/3zk0Ln+Ett92pbODhUliYHkVFy/ZZtoX66lggLjZXGdBP\\n2pLx/cAR09B0m1QDBvkzGewmF6Hl0gXqKSBQel1vnR8Pp2c8Fjp3sDB65hiStXmf\\na6NpMZBAb4vBp39SyRrbXiNH7GbYoIiBBtgnhVg4zHAG6btsEyAtmVM0aMhn01TK\\nHQIDAQAB\\n-----END PUBLIC KEY-----",
+	        "subject": "testuser@ourdomain.com"
+	    },
+	    
+	    "Test Client ID PHP-5.2": {
+	        "key": "mysecretkey",
+	        "subject": "testuser@ourdomain.com"
+	    },
+	    
+	    "Missing Key Client": {
+	        "key": null,
+	        "subject": "testuser@ourdomain.com"
+	    },
+	    
+	    "Missing Key Client PHP-5.2": {
+	        "key": null,
+	        "subject": "testuser@ourdomain.com"
+	    }
+    }
+}

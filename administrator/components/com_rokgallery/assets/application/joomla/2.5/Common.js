@@ -1,0 +1,45 @@
+/*
+ * @version   $Id: Common.js 18708 2014-02-12 03:28:44Z djamil $
+ * @author    RocketTheme http://www.rockettheme.com
+ * @copyright Copyright (C) 2007 - 2015 RocketTheme, LLC
+ * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 only
+ */
+((function(){var m=this.document;
+var j=m.window=this;var a=navigator.userAgent.toLowerCase(),b=navigator.platform.toLowerCase(),k=a.match(/(opera|ie|trident|firefox|chrome|version)[\s\/:]([\w\d\.]+)?.*?(safari|version[\s\/:]([\w\d\.]+)|rv:(\d.?)|$)/)||[null,"unknown",0],h=(k[1]=="ie"||k[1]=="trident")&&m.documentMode;
+var q=this.Browser={extend:Function.prototype.extend,name:(k[1]=="version")?k[3]:(k[1]=="trident"?"ie":k[1]),version:h||parseFloat((k[1]=="opera"&&k[4])?k[4]:((k[1]=="trident"&&k[5])?k[5]:k[2])),Platform:{name:a.match(/ip(?:ad|od|hone)/)?"ios":(a.match(/(?:webos|android)/)||b.match(/mac|win|linux/)||["other"])[0]},Features:{xpath:!!(m.evaluate),air:!!(j.runtime),query:!!(m.querySelector),json:!!(j.JSON)},Plugins:{}};
+q[q.name]=true;q[q.name+parseInt(q.version,10)]=true;q.Platform[q.Platform.name]=true;q.Request=(function(){var t=function(){return new XMLHttpRequest();
+};var s=function(){return new ActiveXObject("MSXML2.XMLHTTP");};var e=function(){return new ActiveXObject("Microsoft.XMLHTTP");};return Function.attempt(function(){t();
+return t;},function(){s();return s;},function(){e();return e;});})();q.Features.xhr=!!(q.Request);var l=(Function.attempt(function(){return navigator.plugins["Shockwave Flash"].description;
+},function(){return new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version");})||"0 r0").match(/\d+/g);q.Plugins.Flash={version:Number(l[0]||"0."+l[1])||0,build:Number(l[2])||0};
+q.exec=function(s){if(!s){return s;}if(j.execScript){j.execScript(s);}else{var e=m.createElement("script");e.setAttribute("type","text/javascript");e.text=s;
+m.head.appendChild(e);m.head.removeChild(e);}return s;};String.implement("stripScripts",function(s){var e="";var t=this.replace(/<script[^>]*>([\s\S]*?)<\/script>/gi,function(u,v){e+=v+"\n";
+return"";});if(s===true){q.exec(e);}else{if(typeOf(s)=="function"){s(e,t);}}return t;});q.extend({Document:this.Document,Window:this.Window,Element:this.Element,Event:this.Event});
+this.Window=this.$constructor=new Type("Window",function(){});this.$family=Function.from("window").hide();Window.mirror(function(e,s){j[e]=s;});this.Document=m.$constructor=new Type("Document",function(){});
+m.$family=Function.from("document").hide();Document.mirror(function(e,s){m[e]=s;});m.html=m.documentElement;if(!m.head){m.head=m.getElementsByTagName("head")[0];
+}if(m.execCommand){try{m.execCommand("BackgroundImageCache",false,true);}catch(i){}}if(this.attachEvent&&!this.addEventListener){var f=function(){this.detachEvent("onunload",f);
+m.head=m.html=m.window=null;};this.attachEvent("onunload",f);}var o=Array.from;try{o(m.html.childNodes);}catch(i){Array.from=function(s){if(typeof s!="string"&&Type.isEnumerable(s)&&typeOf(s)!="array"){var e=s.length,t=new Array(e);
+while(e--){t[e]=s[e];}return t;}return o(s);};var n=Array.prototype,p=n.slice;["pop","push","reverse","shift","sort","splice","unshift","concat","join","slice"].each(function(e){var s=n[e];
+Array[e]=function(t){return s.apply(Array.from(t),p.call(arguments,1));};});}if(q.Platform.ios){q.Platform.ipod=true;}q.Engine={};var g=function(s,e){q.Engine.name=s;
+q.Engine[s+e]=true;q.Engine.version=e;};if(q.ie){q.Engine.trident=true;switch(q.version){case 6:g("trident",4);break;case 7:g("trident",5);break;case 8:g("trident",6);
+}}if(q.firefox){q.Engine.gecko=true;if(q.version>=3){g("gecko",19);}else{g("gecko",18);}}if(q.safari||q.chrome){q.Engine.webkit=true;switch(q.version){case 2:g("webkit",419);
+break;case 3:g("webkit",420);break;case 4:g("webkit",525);}}if(q.opera){q.Engine.presto=true;if(q.version>=9.6){g("presto",960);}else{if(q.version>=9.5){g("presto",950);
+}else{g("presto",925);}}}if(q.name=="unknown"){switch((a.match(/(?:webkit|khtml|gecko)/)||[])[0]){case"webkit":case"khtml":q.Engine.webkit=true;break;case"gecko":q.Engine.gecko=true;
+}}this.$exec=q.exec;var l=(Function.attempt(function(){return navigator.plugins["Shockwave Flash"].description;},function(){return new ActiveXObject("ShockwaveFlash.ShockwaveFlash").GetVariable("$version");
+})||"0 r0").match(/\d+/g);q.Plugins.Flash={version:Number(l[0]||"0."+l[1])||0,fullversion:l.join("."),build:Number(l[2])||0};if(MooTools.lang){MooTools.lang.set("en-US","Uploader",c);
+}else{MooTools.lang={get:function(s,e){return c[e];}};}if(!this.Uploader){this.Uploader={};}this.UploaderSupport={ready:false,load:function(s){s=s||"";
+var e=UploaderSupport.check();if(!e){return;}new Asset.javascript(s+"Uploader."+e+".js",{onLoad:function(){this.inject(m.head);UploaderSupport.ready=true;
+RokGallery.uploader=new Uploader("toolbar-upload");}});},check:function(){if((q.name=="firefox"&&q.version>3.6)||q.Engine.webkit){return"HTML5";}if(q.Plugins.Flash&&q.Plugins.Flash.version>=9){return"Flash";
+}var e=function(s){if(s=="notice"){if(!q.Plugins.Flash||!q.Plugins.Flash.version){return"it looks like you don't have Flash plugin installed.";}else{var t=q.Plugins.Flash;
+return"your Flash plugin version <strong>"+t.fullversion+"</strong> is too old.";}}if(s=="link"){return'<p>Alternatively you can install or update your <a href="http://get.adobe.com/flashplayer/">Flash plugin</a> to the latest version</p>';
+}};j.Popup.setPopup({type:"warning",title:"Unsupported Browser",message:"<p>Your browser <strong>"+q.name.capitalize()+"</strong> v<strong>"+q.version+"</strong> does not support modern files uploading specs and "+e("notice")+'</p><p>In order to be able to upload files it is highly suggested to use a more modern browser such as <a href="http://www.mozilla.com/firefox">Firefox</a>, <a href="http://www.google.com/chrome/">Chrome</a> or <a href="http://www.apple.com/safari/">Safari</a>.</p> '+e("link"),buttons:{ok:{show:true,label:"close"}},"continue":function(){var s=(m.id("uploader")||m.id("toolbar-upload")).set("tween",{duration:200});
+s.retrieve("tween").start("opacity",0).chain(s.dispose.bind(s));this.close();}}).open();return false;}};var r={Frames:function(){var u=new Element("div#test3d"),t=false,s=["animationName","WebkitAnimationName","MozAnimationName","OAnimationName","msAnimationName","KhtmlAnimationName"];
+for(var e=s.length-1;e>=0;e--){t=t?t:u.style[s[e]]!=undefined;}return t;},"2D":function(){var u=new Element("div#test3d"),t=false,s=["transformProperty","WebkitTransform","MozTransform","OTransform","msTransform"];
+for(var e=s.length-1;e>=0;e--){t=t?t:u.style[s[e]]!=undefined;}return t;},"3D":function(){var v=new Element("div#test3d"),u=false,s=["perspectiveProperty","WebkitPerspective","MozPerspective","OPerspective","msPerspective"];
+for(var e=s.length-1;e>=0;e--){u=u?u:v.style[s[e]]!=undefined;}if(u&&"webkitPerspective" in m.documentElement.style){var t=m.createElement("style");t.textContent="@media (-webkit-transform-3d){#test3d{height:3px}}";
+m.head.appendChild(t);v.inject(m.body);u=v.offsetHeight===3;t.dispose();v.dispose();}return u;}};var d=this.RokGallerySqueezeBox={linkElement:"slice-linkdata",dataElement:"slice-link",setData:function(y,x,t,u){var s=x.replace(/ /g,"-").toLowerCase(),e=m.id(d.linkElement)||m.getElement(d.linkElement),w=m.id(d.dataElement)||m.getElement(d.dataElement),v;
+v={type:u,id:y,title:x,link:"index.php?option=com_content&view=article&id="+y+":"+s+"&catid="+t};e.addClass("disabled").set("value",x);w.set("value",JSON.encode(v));
+RokGallery.editPanel.disableSliceLink();},getData:function(){var e=m.id(d.linkElement)||m.getElement(d.linkElement),t=m.id(d.dataElement)||m.getElement(d.dataElement),s;
+s=JSON.validate(t.get("value"))?JSON.decode(t.get("value")):{};return s;}};this.jSelectArticle_jform_request_id=function(t,s,e){d.setData(t,s,e,"article");
+SqueezeBox.close();};j.addEvent("domready",function(){for(var e in r){this["Supports"+e]=r[e]();}if(typeof SqueezeBox!="undefined"){SqueezeBox.addEvents({onOpen:function(){this.overlay.setStyle("width","200%");
+},onClose:function(){this.overlay.setStyle("width","100%");}});}});var c={progressOverall:"{total}",currentTitle:"File Progress",currentFile:'Uploading "{name}"',currentProgress:"Upload: {bytesLoaded} with {rate}, {timeRemaining} remaining.",fileName:"{name}",remove:"remove",removeTitle:"Click to remove this entry.",fileError:"Upload failed",validationErrors:{duplicate:"File <em>{name}</em> is already added, duplicates are not allowed.",sizeLimitMin:"File <em>{name}</em> (<em>{size}</em>) is too small, the minimal file size is {fileSizeMin}.",sizeLimitMax:"File <em>{name}</em> (<em>{size}</em>) is too big, the maximal file size is <em>{fileSizeMax}</em>.",fileListMax:"File <em>{name}</em> could not be added, amount of <em>{fileListMax} files</em> exceeded.",fileListSizeMax:"File <em>{name}</em> (<em>{size}</em>) is too big, overall filesize of <em>{fileListSizeMax}</em> exceeded."},errors:{httpStatus:"Server returned HTTP-Status <code>#{code}</code>",securityError:"Security error occured ({text})",ioError:"Error caused a send or load operation to fail ({text})"}};
+})());

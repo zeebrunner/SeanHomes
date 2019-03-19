@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?> 
+<metadata>
+        <layout title="com_rsappt_pro3_booking_screen_simple_view_default_title">
+                <message>Display the ABPro simple Booking screen</message>
+        </layout>
+		
+<fields name="params">
+<fieldset name="advanced">
+		<field name="res_or_cat" type="list" 
+			label="Screen Display" description="Select optional Single Resource, Single Category or Single Service. (for public booking screens only). 'Normal' shows all resources. ">
+			<option value="0">Normal</option>
+			<option value="1">Single Resource</option>
+			<option value="2">Single Category</option>
+			<option value="3">Single Service</option>
+			<option value="4">Default Resource</option>
+			<option value="5">Default Category</option>
+		</field>
+		<field name="passed_id" type="text" default="" label="Id"
+			description="Enter a resource id or category id and ABPro will open showing just that single resource, category or service (for public booking screens only)" />
+	</fieldset>
+</fields>		
+</metadata>

@@ -1,0 +1,642 @@
+ /* Default Facebook CSS */
+            .body
+            {
+                font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+                font-size: 11px;
+                color: #333333;
+            }
+            /* Default Anchor Style */
+            .body a
+            {
+                color: #3b5998;
+                outline-style: none;
+                text-decoration: none;
+                font-size: 11px;
+                font-weight: bold;
+            }
+            .body a:hover
+            {
+                text-decoration: underline;
+            }
+            /* Facebook Box Styles */
+            .fbgreybox
+            {
+                background-color: #f7f7f7;
+                border: 1px solid #cccccc;
+                color: #333333;
+                padding: 10px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .fbbluebox
+            {
+                background-color: #eceff6;
+                border: 1px solid #d4dae8;
+                color: #333333;
+                padding: 10px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .fbinfobox
+            {
+                background-color: #fff9d7;
+                border: 1px solid #e2c822;
+                color: #333333;
+                padding: 10px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            .fberrorbox
+            {
+                background-color: #ffebe8;
+                border: 1px solid #dd3c10;
+                color: #333333;
+                padding: 10px;
+                font-size: 13px;
+                font-weight: bold;
+            }
+            /* Content Divider on White Background */
+            .fbcontentdivider
+            {
+                margin-top: 15px;
+                margin-bottom: 15px;
+                width: 520px;
+                height: 1px;
+                background-color: #d8dfea;
+            }
+            /* Facebook Tab Style */
+            .fbtab
+            {
+                padding: 8px;
+                background-color: #d8dfea;
+                color: #3b5998;
+                font-weight: bold;
+                float: left;
+                margin-right: 4px;
+                text-decoration: none;
+            }
+            .fbtab:hover
+            {
+                background-color: #3b5998;
+                color: #ffffff;
+                cursor: hand;
+            }
+        
+/**********************************************
+CSS file for Appointment Booking Pro Front End
+***********************************************/
+
+#sv_apptpro_request {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	background-color:#FFFFFF;
+	border:dashed;
+	border-width:1px;
+	border-color:#999999;
+	/* un-comment the following line to set booking screen width */
+	/*width:500px;*/
+}
+
+#sv_apptpro_request_gad {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	background-color:#FFFFFF;
+	border:dashed;
+	border-width:1px;
+	border-color:#999999;
+	/* un-comment the following line to set booking screen width */
+}
+
+#sv_apptpro_request_gad td{
+	font-size: 11px;
+	padding:0;
+    /*background-color:#999999;*/
+}
+
+.sv_apptpro_request_dropdown {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	/* un-comment the following line to override template colors */
+	/*color:#000000;*/ 
+}
+
+.sv_apptpro_request_text {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+	/* un-comment the following line to override template colors */
+	/*color:#000000;*/ 
+}
+
+.sv_apptpro_request_label {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+	font-size: 11px;
+        text-align:left/*, top;*/
+	/* un-comment the following line to override template colors */
+	/*color:#000000;*/ 
+	/*line-height:30px;*/
+}
+
+.sv_apptpro_request_select_user_label {
+	background-color:#FFFFCC;
+}
+
+.sv_apptpro_request_helptext {
+	font-size:10px;
+	color:#666666;
+	line-height:20px;
+}
+
+.sv_apptpro_request_cancel_row {
+	background-color:#FFFFCC;
+}
+
+#sv_apptpro_front_desk {
+    width:100%;
+	background-color:#FFFFFF;
+	border-width:1px;
+	border-color:silver;
+}
+
+/* Calendar view settings */
+.calendar_text{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+}
+.calendarHeader { 
+    font-weight: bolder; 
+    font-size:16px;
+}
+.calendarHeaderDays { 
+    font-weight: bolder; 
+    background-color:#E7E7E7;
+	border: solid 1px;
+}
+
+.calendarToday { 
+    background-color:#FFFFCC;
+}
+
+.calendar { 
+    background-color: #FFFFFF; 
+    border: solid 1px;
+    font-size: 11px;    
+    padding:2px;
+    background-color:#FBFBFB;
+}
+.calendarCell {
+    height:50px;
+    border: solid 1px;
+}
+
+.calendar_day_number{
+    color:Navy;
+}
+
+.calendar_week_view{
+    background-color: #FFFFFF; 
+    border: solid 1px;
+    font-size: 11px;    
+    padding:2px;
+}
+
+.calendar_week_view_header_row{
+    height:30px;
+    margin:10px; 
+}
+
+.week_day_table{
+    border: solid 1px;
+}
+
+.week_row_header{
+    color:Navy;
+    line-height:15px;
+    background-color:#F6F6F6;
+    font-size:11px;
+}
+
+.week_row{
+    font-size: 11px;
+    line-height:15px;
+}
+
+.week_row0{
+    font-size: 11px;
+    line-height:15px;
+}
+.week_row1{
+    font-size: 11px;
+    line-height:15px;
+	background-color:#F6F6F6;
+}
+
+
+.row0{	
+	font-size:11px;
+}	 
+
+.row1{	
+	background-color:#F6F6F6;
+	font-size:11px;
+}	 
+
+.detail_row0{	
+	background-color:#FFFFFF;
+	font-size: 11px;
+}	 
+
+.detail_row1{	
+	background-color:#F6F6F6;
+	font-size: 11px;
+}	 
+		 
+.admin_detail_row0 {
+	background-color:#FFFFFF;
+	font-size: 11px;
+	vertical-align:middle;
+}
+
+.admin_detail_row1 {
+	background-color:#F6F6F6;
+	font-size: 11px;
+	vertical-align:middle;
+}
+ 
+.sv_apptpro_errors {
+        color:#FF0000;
+}
+
+.sv_gad_timeslot_available {
+	display: inline;
+	border:solid;
+	border-width:1px; 
+	border-color:#33CC00;
+	background-color:#CCFFCC;
+	height:20px;
+	padding:1px;
+
+}
+		 
+.sv_gad_timeslot_clickable{
+	display: block;
+    height:100%;
+}
+
+.sv_gad_timeslot_booked {
+	display: inline;
+	border:solid;
+	border-width:1px; 
+	border-color:#FF0000;
+	background-color:#FFCECE;
+	height:20px;
+	padding:1px;
+}		 
+
+.sv_gad_timeslot_pending {
+	display: inline;
+	border:dashed;
+	border-width:1px; 
+	border-color:#FF0000;
+	background-color:#FFCECE;
+	height:20px;
+	padding:1px;
+}		
+
+.sv_gad_timeslot_book-off {
+	display: block;
+	border:solid;
+	border-width:1px; 
+	border-color:#FFCC00;
+	background-color:#FFFFCC;
+	height:20px;
+	padding:1px;
+}
+
+.sv_gad_timeslot_selected {
+	display: inline;
+	border:solid;
+	border-width:1px; 
+	border-color:##33CC00;
+	background-color:#FFFFB4;
+	height:20px;
+	padding:1px;
+}		 
+
+.sv_gad_user_selection{
+	background-color:#CCFFCC;
+}
+
+.sv_gad_user_selection_table{
+	border-collapse: collapse;
+	border-style:solid;
+	border-width:1px;
+	border-color:#33CC00;
+}
+
+.sv_gad_user_selection_row{
+}
+.sv_gad_user_selection_row td{
+	padding-left:5px;
+	padding-right:5px;
+	border-style:solid;
+	border-width:1px;
+	border-color:#33CC00;
+}
+
+
+
+.sv_gad_timeslot_header {
+	font-size: 11px;
+	border:solid;
+	border-width:1px; 
+	border-color:#0033CC;
+	#border-right:1px;
+	color:#0033CC;
+	background-color:#FFFFFF;
+	height:15px;
+	padding:0px;
+	margin-top:0px;
+}
+
+.sv_gad_timeslot_yaxis_header {
+	border-bottom:solid;
+	border-bottom-width:1px; 
+	border-bottom-color:#0033CC;
+	border-right:dotted;
+	border-right:1px;
+	border-right-color:#0033CC;
+	color:#0033CC;
+	font-size:10px;
+	height:20px;
+
+}
+
+.sv_gad_row_wrapper {
+
+	color:#0033CC;
+	height:20px;
+}		 
+		 
+.sv_gad_container_table {
+	border:dotted;
+	border-width:1px; 
+	border-color:#CCCCCC;
+}		 
+		 
+.sv_apptpro_selected_resource {
+	font-weight:bold;
+	color:#0000CC;
+}		 
+
+.sv_gad_legend{
+	color:#0033CC;
+	font-size:10px;
+	line-height:25px;
+	/*background-color:#CCFFCC;*/
+
+}
+table#sv_gad_outer_table tr td{
+	height:30px; !important
+	border-top:solid;
+	border-top-width:1px; 
+	border-top-color:#0033CC;
+}		 
+		
+.title{
+	border-bottom:1px solid #666666; 
+}
+			 
+ 
+/* tabs */
+dl.tabs {
+   float: left;
+   margin: 10px 0 -1px 0;
+   z-index: 50;
+}
+dl.tabs dt {
+   float: left;
+   padding: 4px 10px;
+   border-left: 1px solid #ccc;
+   border-right: 1px solid #ccc;
+   border-top: 1px solid #ccc;
+   margin-left: 3px;
+   background: #f0f0f0;
+   color: #666;
+}
+dl.tabs dt.open {
+   background: #F9F9F9;
+   border-bottom: 1px solid #F9F9F9;
+   z-index: 100;
+   color: #000;
+}
+div.current {
+   clear: both;
+   border: 1px solid #ccc;
+   padding: 10px 10px;
+}
+div.current dd {
+   padding: 0;
+   margin: 0;
+}
+ 
+#resource_udfs_div {
+   background: #F9F9F9;
+   width:80%;
+}		 
+		 
+ 
+/* color codes for front desk month view */
+.calendar_text_new {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#CC66FF;
+}		 
+.color_new{
+	color:#CC66FF;
+}
+.calendar_text_new a:link, calendar_text_new a:visited, calendar_text_new a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#CC66FF;
+}		 
+.calendar_text_accepted {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#009900;
+}		 
+.color_accepted{
+	color:#009900;
+}
+.calendar_text_accepted a:link, calendar_text_accepted a:visited, calendar_text_accepted a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#009900;
+}		 
+.calendar_text_pending {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#FF9900;
+}		 
+.color_pending{
+	color:#FF9900;
+}
+.calendar_text_pending a:link, calendar_text_pending a:visited, calendar_text_pending a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#FF9900;
+}		 
+.calendar_text_declined {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.color_declined{
+	/*color:#FF9900;*/
+}
+.calendar_text_declined a:link, calendar_text_declined a:visited, calendar_text_declined a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.calendar_text_canceled {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#FF0000;
+}		 
+.color_canceled{
+	color:#FF0000;
+}
+.calendar_text_canceled a:link, calendar_text_canceled a:visited, calendar_text_canceled a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	color:#FF0000;
+}		 
+.calendar_text_no_show {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.color_no_show{
+	/*color:#FF9900;*/
+}
+.calendar_text_no_show a:link, calendar_text_no_show a:visited, calendar_text_no_show a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.calendar_text_attended {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.color_attended{
+	/*color:#FF9900;*/
+}
+.calendar_text_attended a:link, calendar_text_attended a:visited, calendar_text_attended a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.calendar_text_completed {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.color_completed{
+	/*color:#FF9900;*/
+}
+.calendar_text_completed a:link, calendar_text_completed a:visited, calendar_text_completed a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.calendar_text_deleted {
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+.color_deleted{
+	/*color:#FF9900;*/
+}
+.calendar_text_deleted a:link, calendar_text_deleted a:visited, calendar_text_deleted a:hover{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;    
+    font-size:10px;
+	/*color:#FF9900;*/
+}		 
+		
+.sv_gad_legend_mobile{
+	color:#0033CC;
+	font-size:8px;
+	line-height:18px;
+	/*background-color:#CCFFCC;*/
+}
+
+
+/* new in 1.4.4 */
+
+.sv_gad_non_work_day {
+	display: block;
+	border:solid;
+	border-width:1px; 
+	border-color:#FFCC00;
+	background-color:#FFFFCC;
+	height:20px;
+	padding:1px;
+}	
+
+		 
+#resource_extras_div{
+    background-color:#F4FBEA;
+    /*width:500px;*/
+} 		 
+		 
+#resource_seat_types_div{
+    background-color:#FAFAF1;
+    /*width:500px;*/
+} 
+		 
+/* new in 1.4.6 */
+.gad2_grid{
+
+}
+.gad2_row{
+	border-top:solid 1px #666;
+}
+
+.gad2_legend{
+    border-top:solid 1px #666;
+    padding-top:5px;
+}
+
+		
+#cell_container{
+     background-color:#FAFAF1;
+} 
+		 
+#svlabel{
+	float:left; 
+	width:auto; 
+	margin-left:0.5em; 
+	margin-right:0.5em; 
+	padding-top:4px;
+} 
+		 
+#sv_apptpro_fb_conf{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+	font-size: 12px;
+}
+
+.title{
+	font-family: "lucida grande" ,tahoma,verdana,arial,sans-serif;
+.sv_date_box {
+	width:80px; 
+	text-align: center;
+}
+
+.sv_date_box_mobile {
+	width:140px; 
+	text-align: center;
+}
+	font-size: 11px;	
+}
+

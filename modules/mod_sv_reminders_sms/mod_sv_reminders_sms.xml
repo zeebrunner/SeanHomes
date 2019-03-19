@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="install">
+	<name>SMS Reminders for ABPro</name>
+	<creationDate>October 2012</creationDate>
+	<author>Soft Ventures, Inc.</author>
+	<copyright>Soft Ventures, Inc. All rights reserved</copyright>
+	<authorEmail>support@softventures.com</authorEmail>
+	<authorUrl>www.softventures.com</authorUrl>
+	<version>3.0 beta 3</version>
+	<description>
+		<![CDATA[ 
+			<div style="text-align:left">
+			<p>SMS Reminder Module for Soft Ventures' Appointment Booking Pro / Joomla 3.x </p>
+			<br />		
+			<p><u>Version 3.0 (beta 3 May 15/14) </u></p>
+			This module is used in conjunction with your server's cron facility to send out automated text messaging reminder messages. 
+			<br/>Cron job <u>MUST</u> be set to run <u>once per hour</u>!
+	        <br/>	
+			<span style="color:#FF0000">Note:</span> Module Menu Assignment <b>MUST</b> be 'On all pages' in order for the code to have access to module parameters.
+	        <br/>	
+			
+			beta 2
+			- added Twilio support.
+
+			beta 3
+			- Renamed function sendSMS to sv_sendSMS to avoid conflict server utility that has shown up on some sites.
+
+
+			</div>
+		</p>]]>	
+		</description>
+	<files>
+		<filename module="mod_sv_reminders_sms">mod_sv_reminders_sms.php</filename>
+		<filename>reminders_cron_sms.php</filename>
+		<filename>show_path.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="hours_before" type="text" label="Hours Before Booking" default="2,4,20" description="Number of HOURS before the booking to send a reminder. ** can be multiple example: 5,3 " /> 
+				<field name="no_call_before" type="list" default="8" label="Do Not Call Before" description="No SMS calls before this time" >
+					<option value="1">01:00</option>
+					<option value="2">02:00</option>
+					<option value="3">03:00</option>
+					<option value="4">04:00</option>
+					<option value="5">05:00</option>
+					<option value="6">06:00</option>
+					<option value="7">07:00</option>
+					<option value="8">08:00</option>
+					<option value="9">09:00</option>
+					<option value="10">10:00</option>
+					<option value="11">11:00</option>
+					<option value="12">12:00</option>
+					<option value="13">13:00</option>
+					<option value="14">14:00</option>
+					<option value="15">15:00</option>
+					<option value="16">16:00</option>
+					<option value="17">17:00</option>
+					<option value="18">18:00</option>
+					<option value="19">19:00</option>
+					<option value="20">20:00</option>
+					<option value="21">21:00</option>
+					<option value="22">22:00</option>
+					<option value="23">23:00</option>
+				</field>		
+				<field name="no_call_after" type="list" default="19" label="Do Not Call After" description="No SMS calls after this time" >
+					<option value="1">01:00</option>
+					<option value="2">02:00</option>
+					<option value="3">03:00</option>
+					<option value="4">04:00</option>
+					<option value="5">05:00</option>
+					<option value="6">06:00</option>
+					<option value="7">07:00</option>
+					<option value="8">08:00</option>
+					<option value="9">09:00</option>
+					<option value="10">10:00</option>
+					<option value="11">11:00</option>
+					<option value="12">12:00</option>
+					<option value="13">13:00</option>
+					<option value="14">14:00</option>
+					<option value="15">15:00</option>
+					<option value="16">16:00</option>
+					<option value="17">17:00</option>
+					<option value="18">18:00</option>
+					<option value="19">19:00</option>
+					<option value="20">20:00</option>
+					<option value="21">21:00</option>
+					<option value="22">22:00</option>
+					<option value="23">23:00</option>
+				</field>	
+				<field name="component" type="list" default="ABProJ30" label="Component" description="Select either ABPro or RBPro">
+					<option value="ABProJ30">ABPro</option>
+				</field>
+<!--				<field name="version" type="list" default="3.0" label="Version" description="Select which version of ABPro">
+					<option value="3.0">3.x</option>
+				</field>-->
+				<field name="mail_to" type="text" label="Email Results To" default="" size="50" description="Email results to this address. If left blank, the component's config/mailTo address is used." /> 
+				<field name="test_mode" type="radio" default="0" label="Test Mode" description="In Test Mode you can call [your site]/modules/mod_sv_reminders/reminders_cron.php directly from your browser.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+

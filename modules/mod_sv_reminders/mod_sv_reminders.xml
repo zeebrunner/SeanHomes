@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0" client="site" method="install">
+	<name>Email Reminders for ABPro and RBPro</name>
+	<creationDate>December 2012</creationDate>
+	<author>Soft Ventures, Inc.</author>
+	<copyright>Soft Ventures, Inc. All rights reserved</copyright>
+	<authorEmail>support@softventures.com</authorEmail>
+	<authorUrl>www.softventures.com</authorUrl>
+	<version>3.0 beta 1</version>
+	<description>
+		<![CDATA[
+		<div style="text-align:left"> 
+		<p>Reminder Module for Soft Ventures' Appointment Booking Pro.</p>
+		<br />		
+		<p><u>Version 3.0 for Joomla 3.0 (beta 1 Oct 29/12) </u></p>
+		This module is used in conjunction with your server's cron facility to send out automated email reminder messages.
+		<br/>Cron job <u>MUST</u> be set to run <u>once per DAY</u>!
+		<br />		
+		<span style="color:#FF0000">Note:</span> Module Menu Assignment <b>MUST</b> be 'On all pages' in order for the code to have access to module parameters.
+		<br />
+		</div>
+		</p>]]>	
+	</description>
+	
+	<files>
+		<filename module="mod_sv_reminders">mod_sv_reminders.php</filename>
+		<filename>reminders_cron.php</filename>
+		<filename>show_path.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="days_before" type="text" label="Days Before Booking" default="3" description="Number of days before the booking to send a reminder. ** can be multiple example: 5,3 " /> 
+				<field name="component" type="list" default="ABPro" label="Component" description="Select either ABPro or RBPro">
+					<option value="ABProJ30">ABPro (J3.x)</option>
+				</field>
+				<field name="version" type="list" default="3.0" label="Version" description="Works works with ABPro under Joomla 3.x">
+					<option value="3.0">3.0</option>
+				</field>
+				<field name="mail_to" type="text" label="Email Results To" default="" size="50" description="Email results to this address. If left blank, the component's config/mailTo address is used." /> 
+				<field name="test_mode" type="radio" default="0" label="Test Mode" description="In Test Mode you can call [your site]/modules/mod_sv_reminders/reminders_cron.php directly from your browser.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>
+

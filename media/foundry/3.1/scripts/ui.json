@@ -1,0 +1,13 @@
+[
+    {
+        "script": [
+            "ui/core",
+            "ui/widget",
+            "ui/position",
+            "ui/menu",
+            "ui/mouse",
+            "ui/draggable"
+        ],
+        "adapter": "Foundry"
+    }
+]

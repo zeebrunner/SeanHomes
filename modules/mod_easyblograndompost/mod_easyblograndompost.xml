@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0" method="upgrade">
+	<name>EasyBlog Random Post</name>
+	<author>StackIdeas</author>
+	<creationDate>19th October 2010</creationDate>
+	<copyright>Copyright 2009 - 2011 Stack Ideas. All rights reserved.</copyright>
+	<license>GPL License</license>
+	<authorEmail>support@stackideas.com</authorEmail>
+	<authorUrl>http://www.stackideas.com</authorUrl>
+	<version>3.9.1</version>
+	<description>Displays random blog posting from EasyBlog.</description>
+	<languages>
+		<language tag="en-GB">en-GB.mod_easyblograndompost.ini</language>
+		<language tag="da-DK">da-DK.mod_easyblograndompost.ini</language>
+		<language tag="sv-SE">sv-SE.mod_easyblograndompost.ini</language>
+	</languages>
+	<files>
+		<filename module="mod_easyblograndompost">mod_easyblograndompost.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<folder>tmpl</folder>
+	</files>
+	<params addpath="/administrator/components/com_easyblog/elements">
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+		<param name="routingtype" type="list" default="default" label="Routing Type" description="Choose the routing type when generate blog post link">
+			<option value="default">Use default behaviour</option>
+			<option value="menuitem">Use menu item</option>
+			<option value="category">Use post's category</option>
+			<option value="tag">Use post's tag</option>
+		</param>
+		<param name="menuitemid" type="easyblogmenuitem" default="" label="Use Menu Item" description="Select menu item if you have choose to use 'menu item' as routing type" state="1" />
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="total" type="text" default="5" label="Count" description="The number of items to display." />
+		<param name="catid" type="text" label="Category ID" description="Only select blog posts from specific categories. Leave empty to select from all categories" />
+		<param name="showintro" type="list" default="0" label="Show Intro Text" description="Show or hide the post's intro text in the module.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="textcount" type="text" default="200" label="Total characters" description="Set the number of characters should be displayed (set 0 to disable truncating)." />
+		<param name="showcommentcount" type="list" default="1" label="Show Comment Count" description="Show or hide the post's comment total count in the module.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showratings" type="list" default="1" label="Show Ratings" description="Show or hide the rating for the post">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="enableratings" type="list" default="1" label="Enable Ratings" description="Enable rating for the post">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showhits" type="list" default="1" label="Show Post's Hits" description="Show or hide the number of post's hits in the module.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showavatar" type="list" default="1" label="Show Blogger Avatar" description="Show or hide the post's blogger avatar.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showreadmore" type="list" default="1" label="Show Read More" description="Show or hide the read more link.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="showauthor" type="list" default="1" label="Show Post By author name" description="Show or hide Post By author name.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="showdate" type="list" default="1" label="Show post date" description="Show or hide post date.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="video_show" type="list" default="1" label="MOD_EASYBLOGRANDOMPOST_VIDEO_SHOW" description="MOD_EASYBLOGRANDOMPOST_VIDEO_SHOW_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="video_width" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_VIDEO_WIDTH" description="MOD_EASYBLOGRANDOMPOST_VIDEO_WIDTH_DESC" />
+		<param name="video_height" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_VIDEO_HEIGHT" description="MOD_EASYBLOGRANDOMPOST_VIDEO_HEIGHT_DESC" />
+
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="photo_show" type="list" default="1" label="MOD_EASYBLOGRANDOMPOST_PHOTO_SHOW" description="MOD_EASYBLOGRANDOMPOST_PHOTO_SHOW_DESC">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="photo_width" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_WIDTH" description="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_WIDTH_DESC" />
+		<param name="photo_height" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_HEIGHT" description="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_HEIGHT_DESC" />
+		<param name="alignment" type="list" default="default" label="Alignment" description="Set the photo alignment.">
+            <option value="default">Default</option>
+			<option value="left">Left</option>
+			<option value="right">Right</option>
+		</param>
+
+
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+	</params>
+
+	<config>
+		<fields name="params">
+			<fieldset name="basic" addfieldpath="/administrator/components/com_easyblog/elements/fields">
+				<field name="routingtype" type="list" default="default" label="Routing Type" description="Choose the routing type when generate blog post link">
+					<option value="default">Use default behaviour</option>
+					<option value="menuitem">Use menu item</option>
+					<option value="category">Use post's category</option>
+					<option value="tag">Use post's tag</option>
+				</field>
+				<field name="menuitemid" type="modal_easyblogmenuitem" default="" label="Use Menu Item" description="Select menu item if you have choose to use 'menu item' as routing type" state="1" />
+				<field
+					name="total"
+					type="text"
+					default="5"
+					label="Count"
+					description="The number of items to display." />
+				<field
+					name="catid"
+					type="text"
+					default=""
+					label="Category ID"
+					description="Only select blog posts from specific categories. Leave empty to select from all categories" />
+
+				<field name="showintro" type="list" default="0" label="Show Intro Text" description="Show or hide the post's intro text in the module.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="textcount" type="text" default="200" label="Total characters" description="Set the number of characters should be displayed (set 0 to disable truncating)." />
+				<field name="showcommentcount" type="list" default="1" label="Show Comment Count" description="Show or hide the post's comment total count in the module.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="showratings" type="list" default="1" label="Show Ratings" description="Show or hide the rating for the post">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="enableratings" type="list" default="1" label="Enable Ratings" description="Enable ratings for the post">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="showhits" type="list" default="1" label="Show Post's Hits" description="Show or hide the number of post's hits in the module.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="showavatar" type="list" default="1" label="Show Blogger Avatar" description="Show or hide the post's blogger avatar.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="showreadmore" type="list" default="1" label="Show Read More" description="Show or hide the read more link.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="showauthor" type="list" default="1" label="Show Post By author name" description="Show or hide Post By author name.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+				<field name="showdate" type="list" default="1" label="Show post date" description="Show or hide post date.">
+					<option value="0">No</option>
+					<option value="1">Yes</option>
+				</field>
+
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="video_show" type="list" default="1" label="MOD_EASYBLOGRANDOMPOST_VIDEO_SHOW" description="MOD_EASYBLOGRANDOMPOST_VIDEO_SHOW_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="video_width" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_VIDEO_WIDTH" description="MOD_EASYBLOGRANDOMPOST_VIDEO_WIDTH_DESC" />
+			<field name="video_height" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_VIDEO_HEIGHT" description="MOD_EASYBLOGRANDOMPOST_VIDEO_HEIGHT_DESC" />
+
+			<field name="@spacer" type="spacer" default="" label="" description="" />
+			<field name="photo_show" type="list" default="1" label="MOD_EASYBLOGRANDOMPOST_PHOTO_SHOW" description="MOD_EASYBLOGRANDOMPOST_PHOTO_SHOW_DESC">
+				<option value="0">No</option>
+				<option value="1">Yes</option>
+			</field>
+			<field name="photo_width" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_WIDTH" description="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_WIDTH_DESC" />
+			<field name="photo_height" type="text" default="250" size="5" label="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_HEIGHT" description="MOD_EASYBLOGRANDOMPOST_PHOTO_MAX_HEIGHT_DESC" />
+			<field name="alignment" type="list" default="default" label="Alignment" description="Set the photo alignment.">
+	            <option value="default">Default</option>
+				<option value="left">Left</option>
+				<option value="right">Right</option>
+			</field>
+
+
+			</fieldset>
+			<fieldset name="advanced">
+				<field
+					name="moduleclass_sfx" type="text"
+					label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL"
+					description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+
+				<field
+					name="cache"
+					type="list"
+					default="0"
+					label="COM_MODULES_FIELD_CACHING_LABEL"
+					description="COM_MODULES_FIELD_CACHING_DESC" >
+					<option value="1">JGLOBAL_USE_GLOBAL</option>
+					<option value="0">COM_MODULES_FIELD_VALUE_NOCACHING
+					</option>
+				</field>
+
+				<field
+					name="cache_time"
+					type="text"
+					default="900"
+					label="COM_MODULES_FIELD_CACHE_TIME_LABEL"
+					description="COM_MODULES_FIELD_CACHE_TIME_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+
+</install>

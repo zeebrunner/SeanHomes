@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="2.5" type="module" client="site" method="upgrade">
+	<name>RSForm! Pro Feedback Module</name>
+	<author>RSJoomla!</author>
+	<creationDate>November 2012</creationDate>
+	<copyright>(C) 2007-2012 www.rsjoomla.com</copyright>
+	<license>GNU General Public License</license>
+	<authorEmail>support@rsjoomla.com</authorEmail>
+	<authorUrl>www.rsjoomla.com</authorUrl>
+	<version>1.4.0</version>
+	<description><![CDATA[MOD_RSFORM_FEEDBACK_DESC]]></description>
+	<scriptfile>script.php</scriptfile>
+	<files>
+		<filename module="mod_rsform_feedback">mod_rsform_feedback.php</filename>
+		<filename>index.html</filename> 
+		<filename>helper.php</filename> 
+		<filename>tmpl/default.php</filename> 
+		<filename>tmpl/index.html</filename> 
+	</files>
+	<languages folder="language/en-GB">
+		<language tag="en-GB">en-GB.mod_rsform_feedback.ini</language>
+		<language tag="en-GB">en-GB.mod_rsform_feedback.sys.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="moduleclass_sfx" type="text" default="" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+				<field name="@spacer" type="spacer" default="" label="" description="" />
+				<field name="formId" type="forms" default="" label="MOD_RSFORM_FORM" addfieldpath="/administrator/components/com_rsform/models/fields" />
+				<field name="open-in" type="list" default="modal" label="RSFP_OPEN_IN" description="RSFP_OPEN_IN_DESC">
+					<option value="new">RSFP_NEW_WINDOW</option>
+					<option value="same">RSFP_SAME_WINDOW</option>
+					<option value="modal">RSFP_MODAL_WINDOW</option>
+				</field>
+				<field name="modal_x" type="text" default="660" label="RSFP_MODAL_X" description="RSFP_MODAL_X_DESC" />
+				<field name="modal_y" type="text" default="475" label="RSFP_MODAL_Y" description="RSFP_MODAL_Y_DESC" />
+				<field name="itemid" type="text" default="" label="RSFP_ITEMID" description="RSFP_ITEMID_DESC" />
+				<field name="string" type="text" default="feedback" label="RSFP_STRING_TEXT" description="RSFP_STRING_TEXT_DESC" />
+				<field name="font" type="list" default="arial" label="RSFP_FONT" description="RSFP_FONT_DESC">
+					<option value="arial">Arial</option>
+					<option value="ariblk">Arial Black</option>
+					<option value="prst">Pristina</option>
+					<option value="times">Times New Roman</option>
+				</field>
+				<field name="font-size" type="list" default="14" label="RSFP_FONT_SIZE" description="RSFP_FONT_SIZE_DESC">
+					<option value="12">12</option>
+					<option value="14">14</option>
+					<option value="16">16</option>
+					<option value="18">18</option>
+				</field>
+				<field name="position" type="list" default="left" label="RSFP_TEXT_POSITION" description="RSFP_TEXT_POSITION_DESC">
+					<option value="left">RSFP_LEFT</option>
+					<option value="right">RSFP_RIGHT</option>
+					<option value="top">RSFP_TOP</option>
+					<option value="bottom">RSFP_BOTTOM</option>
+				</field>
+				<field name="text-color" type="colors" default="#ffffff" label="RSFP_TEXT_COLOR" description="RSFP_TEXT_COLOR_DESC" addfieldpath="/administrator/components/com_rsform/models/fields" />
+				<field name="bg-color" type="colors" default="#ff0000" label="RSFP_BG_COLOR" description="RSFP_BG_COLOR_DESC" addfieldpath="/administrator/components/com_rsform/models/fields" />
+				<field name="border-color" type="colors" default="#c90000" label="RSFP_BORDER_COLOR" description="RSFP_BORDER_COLOR_DESC" addfieldpath="/administrator/components/com_rsform/models/fields" />
+				<field name="type" type="list" default="png" label="RSFP_IMAGE_TYPE" description="RSFP_IMAGE_TYPE_DESC">
+					<option value="png">png</option>
+					<option value="gif">gif</option>
+					<option value="jpeg">jpeg</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

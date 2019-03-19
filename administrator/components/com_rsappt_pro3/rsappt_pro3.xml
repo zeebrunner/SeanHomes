@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="component" version="3.0" method="install">
+	<name>com_rsappt_pro3</name>
+	<creationDate>June 2015</creationDate>
+	<author>Soft Ventures, Inc.</author>
+	<copyright>Copyright (C) 2008 - 2015 Soft Ventures, Inc. All rights reserved</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>support@softventures.com</authorEmail>
+	<authorUrl>www.softventures.com</authorUrl>
+	<version>3.0.6 (RC 4)</version>
+	<description>
+	
+		<![CDATA[ 
+		<div style="text-align:left">
+			<p>Appointment Booking Pro system for Joomla 3.x </p>
+			This version of ABPro is not compatible with versions of Joomla prior to 3.0.
+			<p>		
+			<p><u>Version 3.0.6 (RC 4 July 23/15) </u></p>
+			</p>		
+			<br />		
+
+		New in version 3.0.6 ..<br />
+		<ul>
+			<li>Graphics and Text in booking screen dropdown lists. </li>
+			<li>Resource images can be displayed in the booking screen grid header.</li>
+			<li>Invoicing - ABPro 3.0.6 works with ccInvoices, creating invoices and updating ABPro when the invoice is paid. Requires Invoice plugins.</li>
+			<li>Birthday Coupons - Support for the Birthday Coupons cron module.</li>
+			<li>Gift Certificates - Create any number of gift certificates with any balance. Given to a customer, they can pay for their booking(s) with the certificate's balance. Create/Sell certificates to customers that they can then give as gifts to friends and family. Note: ABPro manages certificate numbers/balances only. It does not create printable certificates. If required, you would do that outside of ABPro and enter the number/balance into ABPro.</li>
+			<li>Quick Status Change - optionally staff screens can display drop down list for status so a booking's status can be changed without going into the detail screen.</li>
+			<li>Placeholder text for UDFs (set in UDF setup screen) and generic (set in language file) for name, email, phone, coupon and goft certificate.</li>
+			<li>Admin comment on User Credit change. </li>
+			<li>Front end admin screens, fliter by payment status added. </li>
+			<li>Copy Timeslots, when setting new publish dates, not working. Fixed</li>
+			<li>'Previous' button on the public grid will disable to prevent customer from scrolling into the past.</li>
+			<li>Code to support dynamically resized iFrame for ABPro Popup Caller mondule.</li>
+			<li>Menu setting for 'default' Resource or Category.</li>
+		</ul>
+
+		<br />		
+		beta 2
+		<ul>
+		<li>When using ddSlick it takes a bit longer to build the dropdown lists so selecting a timeslot in single day now shows a wait cursor. New</li>
+		<li>Loading Resource and/or Category lists twice sometimes. Fixed</li>
+		</ul>
+		<br />		
+		beta 3
+		<ul>
+		<li>Auto Resource - Allow any registered user to make themselves a resource and accept appointments.</li>
+		<li>Category/Service pseudo relationship. If a resource is assigned to multiple categories, set what services appear for the resource, based on the selected category. New</li>
+		<li>Changes/fixes to the Facebook specific booking screen.</li>
+		<li>Large values of Extra duration adjustment not displaying properly, also un-selecting extra not removing duration adjustment. Fixed</li>		
+		<li>ccInvoice item name and description settings missing from the ABPro Configure screen, Staff tab. Fixed</li>
+		</ul>
+		<br />		
+		RC 1
+		<ul>
+		<li>Simple Booking Screen with single resource, selected time showing same start and end times. Fixed</li>
+		<li>Simple Booking Screen with menu set to Single Resource mode, not showing date selector. Fixed</li>
+		<li>When using Categories, hide resource label when resource dropdown is hidden.</li>
+		<li>Install script not loading file fe_val_edit_pt2.php. Fixed</li>
+		<li>Install script not adding confirmation attachment field. Fixed</li>
+		<li>Typo in install script for payment pending status. Fixed</li>
+		<li>When creating timeslot series, Save is ok but the Save&New is not working. Fixed</li>
+		<li>Long Date Format setting not being applied to end date token. Fixed</li>
+		</ul>
+		<br />
+		RC 2
+		<ul>
+		<li>The new service/category relationship not being applied to sub-categories. Fixed</li>
+		<li>When running with a resource Max Seats > 1, sometimes(?) the second booking attempt shifts the selected slot over one. Fixed</li>
+		<li>Using service based duration the slot on screen is not adjusting size. Also the front end validation is not catching bookings overlapping other bookings or book-offs.</li> 
+		<li>ABPro can get locked in a state where the config screen will not come up. Fixed</li>
+		<li>Adding a new timeslot series, start/end publishing not being considered when checking for conflicts with existing slots. Fixed</li>
+		<li>When fee is set as percentage, screen calculation not rounding to 2 places during totaling. Fixed</li>
+		<li>Front end Copy Book-Offs not functioning. Fixed</li>
+		<li>With Max Seats > 1, and no services for you resource, and the resource selected from the dropdown, the seats types are not dipslyed. Fixed</li>
+		</ul>
+		<br />		
+		RC 3
+		<ul>
+		<li>Front end Advanced Admin, sort and filter settings, not carrying through to printer friendly view. Fixed</li>
+		<li>When using Gift Certificates, refund on cancel not being applied back to the certificate. Fixed.</li>
+		<li>Front Desk server calls changed to synchronous, with wait message feedback, to better handle large data volumes. </li>
+		<li>Rate and Seat Adjustments, list screens, not fully translating on non-English sites. Fixed</li>
+		<li>In confirmation messages, when using service and/or category tokens AND some resources not using services/categories the token is being replaced with customer name. Fixed</li> 
+		<li>When using the shopping cart with PayPal, and the cart total exceedes $1000, the total is not getting passed to PayPal correctly. Fixed.</li>
+		<li>Errors on the Front Desk interactive Thank You message call. Fixed</li>
+		</ul>
+		<br />		
+		RC 4
+		<ul>
+		<li>CSS change to bring GAP div in line.</li>
+		<li>If running with a single timeslot that covers the entire day, AND Time on Y-Axis (or mobile views) the selected timeslot div can encrouch on the 'Next' button and may pervent it from being clicked. Fixed</li>
+		<li>Cancel Link screen date not being translated. Fixed</li>
+		<li>On the Simple booking screen, the 'No Timeslots' message not being translated. Fixed</li>
+		<li>When using a link to call ABPro in single resource mode, the mobile Wizard view not displaying resource correctly. Fixed</li>
+		</ul>
+		<br />		
+		<br />		
+
+
+		Note: If updating from a version prior to 3.0.1 beta 2, you will notice your Radio button UDFs now display horizontally. The columns setting determines columns, so set that to 1 to display in a single vertical column.
+		</div>]]>
+		
+	</description>
+
+	<files folder="site">
+		<filename>index.html</filename>
+		<filename>rsappt_pro3.php</filename>
+		<filename>CalendarPopup.js</filename>
+		<filename>date.js</filename>
+		<filename>calStyles.css</filename>
+		<filename>icon_cal.gif</filename>
+		<filename>icon_cal_gr.png</filename>
+		<filename>icon_cal_mobile.png</filename>
+		<filename>box.png</filename>
+		<filename>fe_val.php</filename>
+		<filename>fe_val_edit.php</filename>
+		<filename>fe_val_edit_pt2.php</filename>
+		<filename>fe_fetch.php</filename>
+		<filename>fe_overlap.php</filename>
+		<filename>functions2.php</filename>
+		<filename>gad_ajax.php</filename>
+		<filename>gad_ajax2.php</filename>
+		<filename>getSlots.php</filename>
+		<filename>publish_x.png</filename>
+		<filename>script.js</filename>
+		<filename>svcalendar.php</filename>
+		<filename>svgcal.php</filename>
+		<filename>sv_apptpro.css</filename>
+		<filename>sv_apptpro_fb.css</filename>
+		<filename>tick.png</filename>
+		<filename>no_image.png</filename>
+		<filename>router.php</filename>
+		<filename>search.png</filename>
+		<filename>mysql2json.class.php</filename>
+		<filename>mysqli2json.class.php</filename>
+		<filename>Mobile_Detect.php</filename>
+		<filename>list_remove24.png</filename>
+		<filename>jquery.validate.min.js</filename>
+		<filename>jquery.validate.creditcardtypes.js</filename>
+		<filename>help_udf.png</filename>
+		<filename>help_udf2.png</filename>
+		<filename>sv_tooltip.js</filename>
+		<filename>sv_tooltip.css</filename>
+		<filename>sv_udf_help.php</filename>
+		<filename>arrow_left30.png</filename>
+		<filename>arrow_right30.png</filename>
+		<filename>ddslick.js</filename>
+		<filename>iframeResizer.min.js</filename>
+		<filename>iframeResizer.contentWindow.min.js</filename>
+
+        <folder>controllers</folder>
+        <folder>views</folder>
+        <folder>payment_processors</folder>
+        <folder>models</folder>
+        <folder>ajax</folder>
+		<folder>anet_php_sdk</folder>
+        <folder>inc</folder>
+        <folder>datepicker_locale</folder>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">language/site/en-GB.com_rsappt_pro3.ini</language>
+	</languages>
+	
+	<install>
+		<sql>
+			<file driver="mysql" charset="utf8">install.rsappt_pro3.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file driver="mysql" charset="utf8">uninstall.rsappt_pro3.sql</file>
+		</sql>
+	</uninstall>
+
+<!--	<installfile>install.abpro.php</installfile>-->
+
+	<administration>
+		<menu img="components/com_rsappt_pro3/images/abpro_logo.png">COM_RSAPPT_PRO3</menu>
+		<submenu>
+			<menu link="option=com_rsappt_pro3&amp;controller=cpanel" img="components/com_rsappt_pro3/images/control_16.png" >COM_RSAPPT_PRO3_CONTROL_PANEL</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=requests" img="components/com_rsappt_pro3/images/bookings_16.png" >COM_RSAPPT_PRO3_APPOINTMENTS</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=categories" img="components/com_rsappt_pro3/images/pad_16.png" >COM_RSAPPT_PRO3_CATEGORIES</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=resources" img="components/com_rsappt_pro3/images/resources_16.png" >COM_RSAPPT_PRO3_RESOURCES</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=services" img="components/com_rsappt_pro3/images/pad_16.png" >COM_RSAPPT_PRO3_SERVICES</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=timeslots" img="components/com_rsappt_pro3/images/timeslots_16.png" >COM_RSAPPT_PRO3_TIME_SLOTS</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=bookoffs" img="components/com_rsappt_pro3/images/bookoffs_16.png" >COM_RSAPPT_PRO3_BOOK-OFFS</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=udfs" img="components/com_rsappt_pro3/images/udf_16.png" >COM_RSAPPT_PRO3_UDFS</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=coupons">COM_RSAPPT_PRO3_COUPONS</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=config_detail" img="components/com_rsappt_pro3/images/configure_16.png" >COM_RSAPPT_PRO3_CONFIGURE</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=user_credit">COM_RSAPPT_PRO3_USER_CREDIT</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=seat_types">COM_RSAPPT_PRO3_SEATS</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=extras">COM_RSAPPT_PRO3_EXTRAS</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=payment_processors">COM_RSAPPT_PRO3_PAYPROC</menu>
+			<menu link="option=com_rsappt_pro3&amp;controller=mail">COM_RSAPPT_PRO3_MAIL</menu>
+		</submenu>
+	
+		<files folder="admin">
+			<filename>access.xml</filename>
+			<filename>config.xml</filename>
+			<filename>index.html</filename>
+			<filename>rsappt_pro3.php</filename>
+			<filename>backup.php</filename>
+			<filename>restore.php</filename>
+			<filename>sendmail_pro2.php</filename>
+			<filename>functions_pro2.php</filename>
+			<filename>tooltip.png</filename>
+			<filename>abpro_admin.css</filename>
+			<!-- database script -->
+			<filename>install.rsappt_pro3.sql</filename>
+			<filename>uninstall.rsappt_pro3.sql</filename>
+
+            <folder>controllers</folder>
+            <folder>tables</folder>
+            <folder>views</folder>
+            <folder>models</folder>
+			<folder>help</folder>
+			<folder>helpers</folder>
+			<folder>images</folder>
+	        <folder>payment_processors</folder>
+	        <folder>ajax</folder>
+
+		</files>
+
+		<languages>
+			<language tag="en-GB">language/admin/en-GB.com_rsappt_pro3.ini</language>
+			<language tag="en-GB">language/admin/en-GB.com_rsappt_pro3.sys.ini</language>
+		</languages>
+
+	</administration>
+
+</extension>

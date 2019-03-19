@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<extension method="upgrade" type="component" version="1.6.0">
+    <name>RokGallery</name>
+    <creationDate>March 4, 2015</creationDate>
+    <author>RocketTheme, LLC</author>
+    <authorEmail>support@rockettheme.com</authorEmail>
+    <authorUrl>http://www.rockettheme.com</authorUrl>
+    <copyright>(C) 2005 - 2015 RocketTheme, LLC. All rights reserved.</copyright>
+    <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+    <version>2.31</version>
+    <description>Parent for all PHP based projects</description>
+
+    <files folder="site">
+        <folder>assets</folder>
+        <filename>rokgallery.php</filename>
+        <filename>include.php</filename>
+        <folder>templates</folder>
+        <folder>views</folder>
+        <filename>controller.php</filename>
+        <filename>requirements.php</filename>
+        <folder>fields</folder>
+        <folder>language</folder>
+        <filename>index.html</filename>
+        <filename>container.xml</filename>
+        <folder>rules</folder>
+        <filename>router.php</filename>
+        <folder>lib</folder>
+    </files>
+
+    <scriptfile>rokgallery_install.script.php</scriptfile>
+
+    <languages folder="site/language/en-GB">
+        <language tag="en-GB">en-GB.com_rokgallery.ini</language>
+    </languages>
+
+    <!--<scriptfile>rokgallery_install.script.php</scriptfile>-->
+
+    <install>
+        <sql>
+            <file charset="utf8" driver="mysql">install/install.mysql.utf8.sql</file>
+        </sql>
+    </install>
+    <uninstall>
+        <sql>
+            <file charset="utf8" driver="mysql">install/uninstall.mysql.utf8.sql</file>
+        </sql>
+    </uninstall>
+
+
+    <administration>
+        <!-- Administration Menu Section -->
+        <menu img="components/com_rokgallery/assets/images/rokgallery_16x16.png">RokGallery</menu>
+
+        <!-- Administration Main File Copy Section -->
+        <!-- Note the folder attribute: This attribute describes the folder
+              to copy FROM in the package to install therefore files copied
+              in this section are copied from /admin/ in the package -->
+        <files folder="admin">
+            <folder>buttons</folder>
+            <folder>install</folder>
+            <folder>assets</folder>
+            <folder>helpers</folder>
+            <filename>rokgallery.php</filename>
+            <filename>include.php</filename>
+            <folder>templates</folder>
+            <folder>views</folder>
+            <filename>controller.php</filename>
+            <folder>language</folder>
+            <filename>index.html</filename>
+            <filename>config.xml</filename>
+        </files>
+
+        <!-- Administration Language File Copy Section -->
+        <languages folder="admin/language/en-GB">
+            <language tag="en-GB">en-GB.com_rokgallery.ini</language>
+            <language tag="en-GB">en-GB.com_rokgallery.sys.ini</language>
+        </languages>
+
+    </administration>
+</extension>

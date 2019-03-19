@@ -292,12 +292,6 @@
 /components/com_users/*
 /components/com_wrapper/*
 /components/index.html
-/images/banners/*
-/images/headers/*
-/images/sampledata/*
-/images/joomla*
-/images/index.html
-/images/powered_by.png
 /includes/*
 /installation/*
 /language/en-GB/en-GB.com_ajax.ini

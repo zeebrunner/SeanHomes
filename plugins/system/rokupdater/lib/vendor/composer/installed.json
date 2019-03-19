@@ -1,0 +1,82 @@
+[
+    {
+        "name": "maciek-kemnitz/phpquery",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/maciek-kemnitz/PhpQuery.git",
+            "reference": "24a0aaa5adfd96ee230a998be34252c9328b8d50"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/maciek-kemnitz/PhpQuery/zipball/24a0aaa5adfd96ee230a998be34252c9328b8d50",
+            "reference": "24a0aaa5adfd96ee230a998be34252c9328b8d50",
+            "shasum": ""
+        },
+        "time": "2013-03-10 18:39:42",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "classmap": [
+                "phpQuery/"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Maciek Kemnitz"
+            }
+        ],
+        "description": "phpQuery is a server-side, chainable, CSS3 selector driven Document Object Model (DOM) API based on jQuery JavaScript Library",
+        "homepage": "http://code.google.com/p/phpquery/"
+    },
+    {
+        "name": "bshaffer/oauth2-server-php",
+        "version": "dev-develop",
+        "version_normalized": "dev-develop",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bshaffer/oauth2-server-php.git",
+            "reference": "b5aff4ba23f6b626276c9ea6adacb6e71fa51179"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bshaffer/oauth2-server-php/zipball/b5aff4ba23f6b626276c9ea6adacb6e71fa51179",
+            "reference": "b5aff4ba23f6b626276c9ea6adacb6e71fa51179",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.2.0"
+        },
+        "time": "2013-04-06 21:42:31",
+        "type": "library",
+        "installation-source": "source",
+        "autoload": {
+            "psr-0": {
+                "OAuth2": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Brent Shaffer",
+                "email": "bshafs@gmail.com",
+                "homepage": "http://github.com/bshaffer"
+            }
+        ],
+        "description": "OAuth2 Server for PHP",
+        "homepage": "http://github.com/bshaffer/oauth2-server-php",
+        "keywords": [
+            "auth",
+            "oauth",
+            "oauth2"
+        ]
+    }
+]

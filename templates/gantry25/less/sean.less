@@ -1,0 +1,721 @@
+/**
+ * @version   1.0
+ * @author    Custom, NBD @Bam
+ * @copyright Copyright (C) 2014 Sean Homes
+ */
+
+@red = #c71400;
+
+
+
+.rt-block.nowpreviewing {
+	background: @red;
+	color: @white;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 48px;
+	padding: 0 10px !important;
+	position: absolute;
+	right: 10px;
+	top: 50px;
+	z-index: 2;
+	@media only screen and (max-width: 1199px) {
+		font-size: 28px;
+		line-height: 42px;
+	}
+	@media only screen and (max-width: 768px) {
+		top: 10px;
+		font-size: 21px;
+		line-height: 36px;
+	}
+}
+#module166 {
+	& h2 {
+		font-size:30px;
+		line-height:28px;
+		span.red2 {
+			display:block;	
+			margin-top:15px;
+			font-size:35px;
+			span.eventDate {
+				font-size:30px;	
+				text-transform:none;
+			}
+		}
+	}
+}
+#ModuleChrome169 {
+	padding-top:0;	
+}
+.menu-home {
+	#seanRegistrations {
+		#rsform_2_page_0 {
+			.rsform-block-header {
+				.formControls {
+					.formBody {
+						h2.red2, h2.red2+h3 {
+							display:none !important;	
+						}
+					}
+				}
+			}
+		}
+	}
+	#module166 {
+		& h2 {
+			font-size:30px;
+			line-height:28px;
+			span.red2 {
+				display:block;	
+				margin-top:15px;
+				font-size:35px;
+				span.eventDate {
+					font-size:30px;	
+					text-transform:none;
+				}
+			}
+		}
+	}
+	.sprocket-features-pagination {
+		position: absolute;
+		right: 50px !important;
+		text-align: right;
+		ul {
+			li {
+				background: #ffffff;
+				margin-right: 5px;
+				box-shadow: none;
+				opacity: 1.0;
+				&.active {
+					background: @red;
+				}
+			}
+		}
+	}
+	.pickHome {
+		.module-content {
+			background: url('../../../images/home-page-slider/home-trio-lll.jpg') 50% 0 no-repeat;
+			background-size: cover;
+			min-height: 400px;
+		}
+	}
+	.smartTown {
+		.module-content {
+			background: url('../../../images/home-page-slider/home-trio-style.jpg') 50% 0 no-repeat;
+			background-size: cover;
+			min-height: 400px;
+		}
+	}
+	.barrie {
+		.module-content {
+			background: url('../../../images/home-page-slider/home-trio-minutes.jpg') 50% 0 no-repeat;
+			background-size: cover;
+			min-height: 400px;
+		}
+	}
+	.module-content {
+		h5 {
+			text-align: center;
+			top: 200px;
+			position: relative;
+			font-size: 1.6em;
+		}
+	}
+	.mod-post-image {
+		img {
+			width: 100%;
+		}
+	}
+}
+
+#seanRegistrations {
+	.rsform-block-fullname {
+		display:none;	
+	}
+	#rsform_2_fieldset_1 {
+		display:block !important;
+		width:100% !important;
+		.rsform-block-header {
+			display:block !important;
+				h2 {
+					display:block !important;
+					font-size:36px;
+					@media only screen and (min-width: 768px) and (max-width: 1000px) {
+						font-size:28px;
+					}
+					&.hideOnSide {
+						display:none !important;	
+					}
+				}
+				h3 {
+					font-size:19px;
+					line-height:1em;
+					&.hideOnSide {
+						display:none !important;	
+					}
+				}
+				p {
+					&.hideOnSide {
+						display:none !important;	
+					}	
+				}
+				ul {
+						&.hideOnSide {
+							display:none !important;	
+						}
+					}
+		}
+	}
+}
+.menu-register {
+	#seanRegistrations {
+		#rsform_2_fieldset_1 {
+			width:50% !important;
+			.rsform-block-header {
+				.formControls {
+					.formBody {
+						h3 { 
+							line-height:1.1em;
+							span.red2 {
+								color:#c71400;
+								font-size:35px !important;
+								font-weight:normal;
+							}
+						}
+					}
+				}
+			h2 {
+				padding:0;
+				margin:0;
+				&.red2 {
+					color:#c71400;	
+				}
+				&::after {
+					content="" !important;	
+				}
+				&.hideOnSide {
+					text-transform:none;
+					display:block !important;
+					font-size:24px;
+					line-height:30px;
+					margin-bottom:40px;
+					span.red2 {
+						display:block;	
+						font-size:45px;
+						line-height:47px;
+						text-transform:uppercase;
+						span.eventDate {
+							display:block;
+							font-size:35px;	
+							line-height:30px;
+							text-transform:none;
+						}
+					}
+	
+				}
+				span.red2 {
+					color:#c71400;	
+				}
+			}
+			p {
+				&.hideOnSide {
+					display:block !important;
+					font-size:25px;	
+				}	
+			}
+			h3 {
+				margin-top:0;
+				font-size:26px !important;
+				&.hideOnSide {
+					display:block !important;	
+				}
+				&.phase1 {
+				margin-bottom:30px;	
+				}
+			}
+			ul {
+				&.hideOnSide {
+					display:block !important;	
+				}
+			}
+			}
+		}
+	}
+}
+.testB-Right div.rt-grid-3.rt-pull-10.sidebar-b {
+	float:right;
+	@media(max-width:767px) {
+		float:none;	
+	}
+}
+
+#rt-sidebar-b {
+	overflow:visible !important;
+	.rt-block {
+		padding-bottom:0;	
+	}
+	h2 {
+		font-size:	36px;
+		text-transform:uppercase;
+		@media only screen and (min-width: 768px) and (max-width: 1000px) {
+				line-height:30px;
+				font-size:30px;
+			}
+		&.hideOnSide {
+			display:none !important;	
+		}
+		&.red2 {
+			color:#c71400;	
+			@media only screen and (min-width: 768px) and (max-width: 1000px) {
+				font-size:28px;
+				line-height:30px;
+			}
+		}
+		span.red2 {
+			color:#c71400;
+			font-size:40px;	
+			line-height:30px;
+			@media only screen and (min-width: 768px) and (max-width: 1000px) {
+				font-size:30px;
+				line-height:30px;
+			}
+		}
+	}
+	h3 {
+		font-size:	22px;
+		line-height:1em;
+		&.phase1 {
+			@media only screen and (min-width: 768px) and (max-width: 1000px) {
+			}
+		}
+		span.red2 {
+			color:#c71400;	
+		}
+	}
+}
+.menu-smart-towns {
+	.itemBody {
+		.itemFullText {
+			h1.main {
+				font-size: 4em;
+				margin: 30px 10px 10px 10px;
+			}
+			h3.style {
+				font-size:4em;
+				margin:30px 10px 10px 10px;
+			}
+			.whiteTop {
+				background: #ffffff;
+				margin: 10px;
+				text-align: center;
+				.houseRow {
+					padding: 15px 0 10px 0;
+				}
+				p {
+					padding-bottom:20px;
+				}
+			}
+			.whiteStyle {
+				background:#ffffff;
+				margin:10px;
+				padding:10px;
+				.module {
+					float:left;
+					width:24%;
+					background:#e1e2e3;
+					border:2px solid #e1e2e3;
+					margin: 0.3%;
+					img {
+						margin-bottom:5px;
+					}
+					p {
+						font-weight: bold;
+						padding: 0 0 0 5px;
+						margin:0;
+						height:48px;
+					}
+					@media only screen and (max-width: 1408px) {
+						width: 49%;
+						margin: 0.2%;
+					}
+					@media only screen and (max-width: 967px) {
+						width: 100%;
+						margin: 0.2%;
+					}
+				}
+			}
+			.redBar {
+				background:#c71400;
+				margin:20px 10px;
+				padding:25px;
+				-webkit-border-radius: 20px 20px 20px 20px;
+				border-radius: 20px 20px 20px 20px;
+				color:#000;
+				font-size:1.5em;
+				line-height:1.7em;
+				.module {
+					float:left;
+					width:30%;
+					margin: 1%;
+					@media only screen and (max-width: 767px) {
+						width: 100%;
+						margin: 1%;
+					}
+				}
+				ul {
+					list-style: square;
+					li {
+						color: #000000;
+						line-height: 1.2em;
+						font-weight: normal;
+						margin-bottom: 20px;
+					}
+				}
+			}
+			.packages {
+				.module {
+					width: 23%;
+					margin: 1%;
+					float: left;
+					background: #000;
+					@media only screen and (max-width: 1199px) {
+						width: 48%;
+						margin: 1%;
+					}
+					h1 {
+						text-transform: lowercase !important;
+						color: #ffffff;
+						padding: 10px;
+					}
+					.white {
+						background: #ffffff;
+						margin: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+.coolstuff {
+	a {
+		img {
+			display:block;
+			margin:0 auto 1em;
+			border:solid 1px @black;
+			box-shadow:0 0 3px rgba(0,0,0,0.35);	
+		}
+		&.seanbutton {
+			display:block;
+			width:auto;
+			padding:5px 3px;
+			text-align:center;
+			text-transform:lowercase;
+			font-size:1.5em;
+			line-height:1.25;
+			background:@red;
+			color:@white;
+			border:solid 1px @red;
+			&:hover {
+				background:@white;
+				color:@red;	
+			}
+		}
+	}
+}
+.packages {
+	.header {
+		font-size: 110px !important;
+		text-transform: lowercase !important;
+		letter-spacing: -5px !important;
+	}
+	.whiteWrapper {
+		.module {
+			width: 48%;
+			float: left;
+			margin: 1%;
+			@media only screen and (max-width: 967px) {
+				width: 100%;
+				margin: 0;
+				float: none;
+			}
+			h2 {
+				background: #000;
+				color: #fff;
+				padding: 0 10px;
+				margin:0;
+			}
+			p {
+				font-size: 12px;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: #fff;
+				background: #000;
+				margin: 0 0 15px 0;
+				padding: 0 10px;
+			}
+			h3 {
+				text-transform: uppercase;
+			}
+			.mainPhoto {
+				width: 50%;
+				float: left;
+			}
+			.options {
+				width: 50%;
+				float: left;
+				h2 {
+					background: #000;
+					color: #fff;
+					padding: 0 10px;
+					margin:0;
+				}
+				p {
+					font-size: 12px;
+					font-weight: bold;
+					text-transform: uppercase;
+					color: #fff;
+					background: #000;
+					margin: 0 0 15px 0;
+					padding: 0 10px;
+				}
+			}
+		}
+		width: 100%;
+		background: #ffffff;
+	}
+}
+
+.menu-builder {
+	h1.topper {
+		font-size:4em;
+		margin:30px 10px 10px 10px;
+	}
+	.white {
+		background:#ffffff;
+		margin:0;
+	}
+	.red {
+		background: @red;
+		margin: 10px 0 10px 0;
+		h2 {
+			color: #ffffff;
+			font-weight: normal !important;
+			text-transform: uppercase;
+			font-size: 2em;
+			line-height: 1.4em;
+			letter-spacing: normal;
+			margin-bottom: 10px;
+		}
+		ul {
+			list-style: square;
+			li {
+				color: #ffffff;
+				margin-bottom: 10px;
+			}
+		}
+	}
+	.module {
+		float:left;
+		width:50%;
+		@media only screen and (max-width: 1199px) {
+			width: 100%;
+			//margin: 0.2%;
+			float: none;
+		}
+	}
+	.padded {
+		padding: 3%;
+	}
+	.builder-wrapper {
+		background: @red;
+	}
+}
+
+.menu-green {
+	#k2Container.itemView {
+		margin:0; padding:0;
+	}
+	.green {
+		padding: 3%;
+		.lead {
+			font-size: 1.6em;
+			line-height: 1.4em;
+		}
+		.green-header {
+			img {
+				width:100%;	
+			}
+		}
+		.module {
+			.a-panel {
+				width: 60%;
+				float: left;
+				p.header {
+					font-size: 2em;
+					font-weight: bold;
+					text-transform: uppercase;
+				}
+				h2 {
+					font-size: 2em;
+					line-height: 2.1em;
+					letter-spacing: 0;
+				}
+				@media only screen and (max-width: 1199px) {
+					width: 100%;
+					margin: 0.2%;
+					float: none;
+				}
+				.white-logos {
+					padding: 1%;
+					background: #ffffff;
+					width: 50%;
+					@media only screen and (max-width: 767px) {
+						width: 100%;
+					}
+				}
+			}
+			.b-panel {
+				width: 40%;
+				float: left;
+				.left-pad {
+					padding-left: 10%;
+					@media only screen and (max-width: 1199px) {
+						padding-left: 0;
+						padding-top: 25px;
+						border-top: 5px solid #000;
+					}
+				}
+				@media only screen and (max-width: 1199px) {
+					width: 100%;
+					margin: 0.2%;
+					float: none;
+				}
+				p {
+					font-weight: bold;
+					font-size: 2em;
+				}
+				ul {
+					li {
+						margin-bottom: 10px;
+					}
+				}
+			}
+		}
+	}
+}
+
+.customgiantShift {
+	p.lead {
+		//font-size: 1.5em;
+		//line-height: 1.5em;
+		margin-bottom: 0;
+	}
+}
+
+
+.floorplan {
+	background: #000;
+	margin-bottom:0;
+	padding: 35px 10px 15px 35px;
+	h1 {
+		&.fresh {
+			color: #5bc9e3;
+		}
+		&.comfort {
+			color: #2869b3;
+		}
+		&.savvy {
+			color: #f9a224;
+		}
+		&.active {
+			color: #ef96c0;
+		}
+		&.smooth {
+			color: #fb333e;
+		}
+		&.cool {
+			color: #a47ab5;
+		}
+		&.shift {
+			color: #f7ed07;
+		}
+		.details {
+			font-size: 0.6em;
+			text-transform: lowercase;
+			.white {
+				color: #ffffff;
+			}
+		}
+	}
+	.altsqft {
+		color: #ffffff;
+		font-size: 12px;
+		line-height: 14px;
+	}
+}
+.mortgage-calculator {
+	margin:20px 5% !important;
+	background: #000000;
+	.border-radius(20px);
+	padding:5% !important;
+	#mortgage_payment_calculator {
+		display:none;	
+	}
+	#tab2 {
+		color:@white;
+		b {
+			color:@red;
+		}
+	}
+}
+#eblog-wrapper {
+	@media only screen and (min-width: 1200px) {
+		width: 60%;
+	}
+}
+
+.broker-page {
+	.left {
+		float: left;
+		width: 30%;
+		@media(max-width: 686px) {
+			float: none;
+			width: 100%;
+		}
+	}
+	.right {
+		float: right;
+		width: 68%;
+		.half {
+			width: 50%;
+			float: left;
+			.padding {
+				padding-left: 20px;
+			}
+			.clear {
+				clear: both;
+			}
+			.keymap {
+				width: 50%;
+				float: left;
+			}
+			.address {
+				float: right;
+				width: 48%;
+			}
+			.clear {
+				clear: both;
+			}
+		}
+		@media(max-width: 686px) {
+			float: none;
+			width: 100%;
+		}
+	}
+	.clear {
+		clear: both;
+	}
+	.padding {
+		padding: 20px;
+	}
+}

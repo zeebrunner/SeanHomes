@@ -1,0 +1,211 @@
+@import "jui/less/mixins.less";
+
+// Core variables and mixins
+@import "variables.less";
+@import "mixins/index.less";
+
+@red = #c71400;
+
+.buyer-guide {
+	h2 {
+		font-size: 52px;
+		line-height: 50px;
+		text-transform: uppercase; 
+	}
+	.wrapper {
+		background: #000000 url('../../../images/guide/header.png') 0 0 no-repeat;
+		background-size: contain;
+		padding-top: 100px;
+		padding-bottom: 100px;
+		.leftBar {
+			float: left;
+			width: 15%;
+			text-align: center;
+			.number {
+				font-size: 8em !important;
+				color: @red !important;
+			}
+		}
+		.rightBar {
+			float: left;
+			width: 70%;
+			margin-left: 2%;
+			padding: 10px;
+			h3 {
+				color: #ffffff !important;
+				padding-left: 15px;
+				margin-bottom: 0;
+				font-size: 2em;
+				&:after {
+					content: ".";
+					color: @red;
+				}
+			}
+			ul {
+				color: #ffffff;
+				margin-top: 0;
+				margin-left: 100px;
+				padding-top: 0;
+				list-style-position: outside;
+				li {
+					list-style: none;
+					font-size: 1.3em;
+					font-weight: bold;
+					line-height: 1.5em;
+					&:before {
+						content: url('../../../images/guide/bullet.png') 0 0 no-repeat;
+						width: 15px;
+						position: relative;
+						left: -20px;
+						top: 3px;
+					}
+				}
+			}
+			.grey-box {
+				background: #636467;
+				-webkit-border-radius: 30px;
+				border-radius: 30px;
+				padding: 20px;
+				.calendar {
+					width: 30%;
+					float: left;
+					img {
+						padding-left: 30%;
+						@media(max-width: 1100px) {
+							padding:0;
+						}
+					}
+					@media(max-width: 550px) {
+						float: none;
+						width: 100%;
+					}
+				}
+				.content {
+					font-size: 1.3em;
+					font-weight: bold;
+					line-height: 1.5em;
+					color: #ffffff;
+					width: 50%;
+					float: left;
+					@media(max-width: 550px) {
+						float: none;
+						width: 100%;
+					}
+				}
+				.icon {
+					width: 20%;
+					float: left;
+					img {
+						padding-left: 30%;
+						@media(max-width: 550px) {
+							padding:0;
+						}
+					}
+					@media(max-width: 550px) {
+						float: none;
+						width: 100%;
+					}
+				}
+			}
+			.red-box {
+				background: @red;
+				-webkit-border-radius: 30px;
+				border-radius: 30px;
+				padding: 20px;
+				ul {
+					color: #ffffff;
+					margin-top: 0;
+					margin-left: 100px;
+					padding-top: 0;
+					list-style-position: outside;
+					li {
+						list-style: none;
+						font-size: 1.3em;
+						font-weight: bold;
+						line-height: 1.5em;
+						&:before {
+							content: url('../../../images/guide/blk-bullet.png') 0 0 no-repeat;
+							width: 15px;
+							position: relative;
+							top: 3px;
+							left: -20px;
+						}
+					}
+				}
+			}
+		}
+		.clear {
+			clear: both;
+		}
+	}
+}
+
+.buyer-sidebar {
+	.head {
+		font-size: 24px;
+		font-weight: bold;
+		color: @red;
+		text-transform: uppercase;
+	}
+}
+
+#tabMain {
+	margin:0;
+	padding:0;
+	width:100%;
+	color:@white;
+	td {
+		margin:0;
+		padding:0;
+		display:block;
+		vertical-align:top;
+		&.lbc {
+			text-align:left;
+			h2 {
+				margin:20px 0 0;
+				font-size: @baseFontSize*1.25;
+				line-height: @baseLineHeight;
+				color:@white;
+				text-align:center;
+			}
+		}
+		&.lb {
+			margin-top:1em;	
+		}
+		input {
+			display:block;
+			width:100%;
+			width:~"calc(100% - 12px)";
+			&[name="submit"]{
+				width:100%;
+				margin-top:20px;
+				text-transform:uppercase;
+			}
+		}
+		select {
+			width:100%;	
+		}
+	}
+}
+#mortgage_payment_calculator {
+	margin-top:20px;
+	color:@white;
+	#tabrez {
+		font-size:x-small;
+		border:solid 1px @white;
+		border-collapse:collapse;
+		td {
+			border-bottom:solid 1px @white;
+			border-left:solid 1px @white;
+			border-collapse:collapse;
+			padding:1px;
+			&.tab_hed {
+				vertical-align:top;
+				span {
+					display:block;
+					line-height:1.25;
+				}
+			}
+		}
+	}
+}

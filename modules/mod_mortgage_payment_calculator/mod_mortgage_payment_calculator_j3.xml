@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.0">
+
+	<name>Mortgage Payment Calculator Free</name> 
+        
+	<author>Andrey Kvasnevskiy</author>
+	<creationDate>January 2014</creationDate>
+	<copyright>(C) 2014 OrdaSoft - Andrey Kvasnevskiy</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>akbet@mail.ru</authorEmail>
+	<authorUrl>www.ordasoft.com</authorUrl>
+	<version>1.3</version>
+	<description>Mortgage Payment calculator - it's a Joomla Module very useful tools which give you an idea of  how much you will be allowed to lend, based on your earnings, or how much your mortgage repayments will be, based on the amount borrowed, the interest rate and term of the mortgage.</description>
+
+        <files>
+            <filename module="mod_mortgage_payment_calculator_j3">mod_mortgage_payment_calculator_j3.php</filename>
+            <filename>mod_mortgage_payment_calculator.xml</filename>
+            <filename>index.html</filename>
+	    <filename>helper.php</filename>
+            <folder>language</folder>
+	    <folder>tmpl</folder>
+        </files>
+	        
+        <config>
+    <fields name="params">
+      <fieldset name="basic">
+        <field
+          name="title"
+          type="text"
+          default="Mortgage Payment Calculator"
+          label="Frontend title"
+          description=""
+          size="40"
+        />
+        <field
+          name="table_header_color"
+          type="text"
+          default="#0C2F5A"
+          label="Color header"
+          description=""
+          size="10"
+        />
+        <field
+          name="table_header_text"
+          type="text"
+          default="#FFFFFF"
+          label="Color text header"
+          description=""
+          size="10"
+        />
+        <field
+          name="currency"
+          type="text"
+          default="EUR"
+          label="Currency"
+          description=""
+          size="10"
+        />
+	<field
+ 	  name="layout"
+	  type="modulelayout"
+	  label="JFIELD_ALT_LAYOUT_LABEL"
+	  description="JFIELD_ALT_MODULE_LAYOUT_DESC">
+	 </field>
+      </fieldset>
+    </fields>
+  </config>
+</extension>

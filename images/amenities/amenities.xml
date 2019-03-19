@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Markers>
+	<CenterPoint>
+		<coordinates>44.349585,-79.702768</coordinates>
+	</CenterPoint>
+	<InitialZoom>14</InitialZoom>
+	<Site>
+		<name>Sean</name>
+		<description>
+			<![CDATA[<a href="https://www.google.ca/maps/dir//Essa+Road+Po,+420+Essa+Rd,+Barrie,+ON/@44.3477366,-79.7036954,17z/data=!4m12!1m3!3m2!1s0x882abda82c935e3b:0x947c5aad1a41cad6!2sEssa+Road+Po!4m7!1m0!1m5!1m1!1s0x882abda82c935e3b:0x947c5aad1a41cad6!2m2!1d-79.70364!2d44.347716" target="new">click for driving directions</a>]]>
+		</description>
+		<visibility>show</visibility>
+		<windowsize>150,50</windowsize>
+		<Point>
+			<coordinates>-79.702768,44.349585</coordinates>
+		</Point>
+		<marker>logo.png</marker>
+	</Site>
+	<Folder>
+		<name>Parks</name>
+		<Icon>parks.png</Icon>
+		<visibility>show</visibility>
+		<open>1</open>
+		<Placemark>
+			<name>Mapleton Park</name>
+			<Point>
+				<coordinates>-79.70420122146606,44.33933504643102,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ardagh Bluffs</name>
+			<Point>
+				<coordinates>-79.72456399999999,44.344124,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Harvie Park</name>
+			<Point>
+				<coordinates>-79.70666885375977,44.34458341980212,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Holly Community Park</name>
+			<Point>
+				<coordinates>-79.7165,44.338419,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Park Place Barrie</name>
+			<Point>
+				<coordinates>-79.69676300000003,44.332838,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Ferndale Park</name>
+			<Point>
+				<coordinates>-79.7172474861145,44.36011094208968,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Centennial Park</name>
+			<Point>
+				<coordinates>-79.68914799999999,44.37922,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bear Creek Eco Park</name>
+			<Point>
+				<coordinates>-79.71261262893677,44.36350128651105,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Beach</name>
+		<Icon>beach.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Wilkin&apos;s Beach</name>
+			<Point>
+				<coordinates>-79.63293624647257,44.36948298295277,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Leonard&apos;s Beach</name>
+			<Point>
+				<coordinates>-79.53429942974284,44.33514035073195,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Innisfil Beach Park</name>
+			<Point>
+				<coordinates>-79.53272171100303,44.31832725066089,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Wasaga Beach</name>
+			<Point>
+				<coordinates>-80.04792885522176,44.49919433750342,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Libraries</name>
+		<Icon>library.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Barrie Public Library</name>
+			<Point>
+				<coordinates>-79.68814500313759,44.39166499966259,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrie Public Library Painswick</name>
+			<Point>
+				<coordinates>-79.64747000072096,44.35437899962117,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Schools</name>
+		<Icon>school.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Holly Meadows Elementary School</name>
+			<Point>
+				<coordinates>-79.71395899999999,44.340435,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Waldorf School Huronia</name>
+			<Point>
+				<coordinates>-79.70411899999999,44.344615,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Trillium Woods Elementary School</name>
+			<Point>
+				<coordinates>-79.69985660021048,44.34321108543145,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>St. Bernadette Elementary School</name>
+			<Point>
+				<coordinates>-79.72128199999997,44.33282,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>St. Nicholas School</name>
+			<Point>
+				<coordinates>-79.72844600000002,44.322606,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Timothy Christian School</name>
+			<Point>
+				<coordinates>-79.71655599999997,44.323416,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Bear Creek Secondary School</name>
+			<Point>
+				<coordinates>-79.73376500000001,44.331637,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>St. Joan of Arc</name>
+			<Point>
+				<coordinates>-79.73252600000001,44.347493,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>W C Little Elementary School</name>
+			<Point>
+				<coordinates>-79.73094000000003,44.328805,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Innisdale Secondary School</name>
+			<Point>
+				<coordinates>-79.68544700000001,44.359589,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Unity Christian High School</name>
+			<Point>
+				<coordinates>-79.689998,44.371992,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Grocery Stores</name>
+		<Icon>grocery.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Food Basics</name>
+			<Point>
+				<coordinates>-79.71033811569214,44.33902810947026,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>The Bulk Barn</name>
+			<Point>
+				<coordinates>-79.68474800000001,44.330532,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>M&amp;M Meat Shops</name>
+			<Point>
+				<coordinates>-79.686981,44.336131,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Sobeys</name>
+			<Point>
+				<coordinates>-79.68635499999999,44.331745,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>LCBO Barrie</name>
+			<Point>
+				<coordinates>-79.69083799999999,44.337454,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Zehrs</name>
+			<Point>
+				<coordinates>-79.69495296478271,44.3586228104117,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Entertainment</name>
+		<Icon>entertainment.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Holly Community Centre</name>
+			<Point>
+				<coordinates>-79.716545,44.340019,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Galaxy Cinemas Barrie</name>
+			<Point>
+				<coordinates>-79.68461000000002,44.323879,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Recreation</name>
+		<Icon>recreation.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Pine View Golf &amp; Country Club</name>
+			<Point>
+				<coordinates>-79.73882600000002,44.338641,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Nevada Bob&apos;s Golf</name>
+			<Point>
+				<coordinates>-79.69301999999999,44.359287,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Fitness</name>
+		<Icon>fitness.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Goodlife Fitness</name>
+			<Point>
+				<coordinates>-79.68383021647195,44.32598966946713,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>LA Fitness</name>
+			<Point>
+				<coordinates>-79.68006476611158,44.33866453795474,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Crossfit Resurrection</name>
+			<Point>
+				<coordinates>-79.67928845742762,44.33617975859016,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Curves</name>
+			<Point>
+				<coordinates>-79.65953748674453,44.3541127983868,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Total Fitness</name>
+			<Point>
+				<coordinates>-79.71854490132853,44.37852413931719,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Restaurants</name>
+		<Icon>restaurants.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Kelsey&apos;s Restaurant</name>
+			<Point>
+				<coordinates>-79.68658800000003,44.334643,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Cora - Barrie</name>
+			<Point>
+				<coordinates>-79.69759599999998,44.331958,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Swiss Chalet Rotisserie &amp; Grill</name>
+			<Point>
+				<coordinates>-79.68759899999998,44.33499,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Best Sicilian Gourmet Pizza &amp; Pasta</name>
+			<Point>
+				<coordinates>-79.713278,44.354664,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mandarin Restaurant</name>
+			<Point>
+				<coordinates>-79.693285,44.360085,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Jack Astor&apos;s Bar &amp; Grill</name>
+			<Point>
+				<coordinates>-79.69113700000003,44.334425,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>East Side Mario&apos;s Restaurant</name>
+			<Point>
+				<coordinates>-79.68980099999999,44.335286,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Grab 'N Go Food</name>
+		<Icon>fastfood.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Pizza Roma &amp; Sub</name>
+			<Point>
+				<coordinates>-79.68759999999997,44.33499,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mucho Burrito</name>
+			<Point>
+				<coordinates>-79.68981300000002,44.334391,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mcdonald&apos;s Restaurants</name>
+			<Point>
+				<coordinates>-79.68847099999999,44.335396,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Starbucks</name>
+			<Point>
+				<coordinates>-79.68843099999998,44.335969,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Harvey&apos;s</name>
+			<Point>
+				<coordinates>-79.68802299999999,44.33602,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Subway</name>
+			<Point>
+				<coordinates>-79.66334000000001,44.339972,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Pizza Pizza</name>
+			<Point>
+				<coordinates>-79.70306900000003,44.347614,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tim Hortons</name>
+			<Point>
+				<coordinates>-79.69680099999999,44.332632,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Tim Hortons</name>
+			<Point>
+				<coordinates>-79.69589200000001,44.363659,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Starbucks</name>
+			<Point>
+				<coordinates>-79.704072,44.347114,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Subway Sandwiches</name>
+			<Point>
+				<coordinates>-79.70378099999999,44.347913,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Shopping</name>
+		<Icon>shopping.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Shoppers Drug Mart</name>
+			<Point>
+				<coordinates>-79.70400810241699,44.34720743029731,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Rexall Pharma Plus</name>
+			<Point>
+				<coordinates>-79.71063852310181,44.33631164733395,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Costco Barrie</name>
+			<Point>
+				<coordinates>-79.68221199999999,44.334057,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>The Home Depot</name>
+			<Point>
+				<coordinates>-79.686803,44.339881,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Walmart</name>
+			<Point>
+				<coordinates>-79.68583000000001,44.331052,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Canadian Tire</name>
+			<Point>
+				<coordinates>-79.69320500000003,44.333454,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Lowe&apos;s Home Improvement</name>
+			<Point>
+				<coordinates>-79.69193816184998,44.35531656817596,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Mountain Equipment Co-op (MEC)</name>
+			<Point>
+				<coordinates>-79.69345092773438,44.35733408852433,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Banks</name>
+		<Icon>banks.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Scotiabank</name>
+			<Point>
+				<coordinates>-79.68684300000001,44.334858,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>TD Canada Trust</name>
+			<Point>
+				<coordinates>-79.70058499999999,44.358105,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>RBC Royal Bank</name>
+			<Point>
+				<coordinates>-79.695651,44.332976,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>BMO Bank of Montreal</name>
+			<Point>
+				<coordinates>-79.69305700000001,44.333676,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+	<Folder>
+		<name>Services</name>
+		<Icon>services.png</Icon>
+		<visibility>hide</visibility>
+		<open>0</open>
+		<Placemark>
+			<name>Royal Victoria Hospital</name>
+			<Point>
+				<coordinates>-79.66189400000002,44.41418,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrie GO Bus Terminal At Maple Ave</name>
+			<Point>
+				<coordinates>-79.69105500000001,44.388042,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>HWY 400</name>
+			<Point>
+				<coordinates>-79.69714164733887,44.36184449112474,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Molson Park Postal Outlet</name>
+			<Point>
+				<coordinates>-79.68789800000002,44.333861,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Barrie South GO Station</name>
+			<Point>
+				<coordinates>-79.62834599999996,44.35177,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>City Bus Service</name>
+			<Point>
+				<coordinates>-79.70007598400116,44.35137050416599,0</coordinates>
+			</Point>
+		</Placemark>
+		<Placemark>
+			<name>Downtown Barrie</name>
+			<Point>
+				<coordinates>-79.69033159999998,44.38935559999999,0</coordinates>
+			</Point>
+		</Placemark>
+	</Folder>
+</Markers>
